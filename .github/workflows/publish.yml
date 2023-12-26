@@ -65,7 +65,7 @@ jobs:
       if: success() && github.ref == 'refs/heads/master'
       uses: actions/upload-pages-artifact@v3
       with:
-        build_dir: ./build/prod
+        path: ./build/prod
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   
